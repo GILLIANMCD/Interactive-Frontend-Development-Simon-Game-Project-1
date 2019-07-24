@@ -1,0 +1,101 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #container {
+    
+  }
+
+ @media screen and (max-width: 376px) {
+    .bg-circle {
+    position: absolute;
+    background: #222;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px; 
+    margin-top: 70px; 
+  }
+  .game-board {
+    position: relative;
+    min-height: 300px;
+    min-width: 300px;
+    font-size: 0; /*Align Quadrants*/
+  }
+  
+  .quadrant {
+    border-style: solid;
+    border-color: #eee;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+.inner-circle {
+    height: 150px;
+    width: 150px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+  }
+ } 
+  .bg-circle {
+    position: absolute;
+    background: #222;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px; 
+    margin-top: 70px; 
+  }
+  .game-board {
+    position: relative;
+    min-height: 600px;
+    min-width: 600px;
+    font-size: 0; /*Align Quadrants*/
+  }
+  
+  .quadrant {
+    border-style: solid;
+    border-color: #eee;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .green {
+    border-radius: 100% 0 0 0;
+    border-width: 4px 2px 2px 4px;
+    background-color: green;
+  }
+  
+  .red {
+    border-radius: 0 100% 0 0;
+    border-width: 4px 4px 2px 2px;
+    background-color: red;
+  }
+  
+  .yellow {
+    border-radius: 0 0 0 100%;
+    border-width: 2px 2px 4px 4px;
+    background-color: yellow;
+  }
+  
+  .blue {
+    border-radius: 0 0 100% 0;
+    border-width: 2px 4px 4px 2px;
+    background-color: blue;
+  }
+  .inner-circle {
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+  }
+  
