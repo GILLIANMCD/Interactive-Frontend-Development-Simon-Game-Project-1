@@ -4,11 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/83ed412054.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <audio id="soundgreen">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  </audio>
+  <audio id="soundred">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  </audio>
+  <audio id="soundyellow">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  </audio>
+  <audio id="soundblue">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
+  <title>Simon Game</title>
 </head>
 
 <body>
@@ -25,14 +38,51 @@
             <div class="yellow quadrant"></div>
             <div class="blue quadrant"></div>
             <div class="inner-circle">
-              <h1>Simon</h1>
+              <h1 class="title">Simon</h1>
+              <div class="row top-inner">
+                <div class="col-6 sm-pd">
+                  <h5 class="sm-pd">
+                    Level
+                  </h5>
+
+                  <form>
+                    <label class="radio-inline level"><input type="radio" name="optradio" checked>1</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio">2</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio">3</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio">4</label>
+                  </form>
+                </div>
+                
+                <div class="col-6">
+                  <h5 class="sm-pd">
+                    Strict
+                  </h5>
+                  <button class="btn sm-pd"><i class="fa fa-toggle-off fa-st"></i></button>
+                </div>
+              </div>
+              <div class="row bottom-inner">
+                <div class="col-6 sm-pd">
+                  <h5 class="sm-pd">
+                    Start
+                  </h5>
+
+                  <button class="btn sm-pd"><i class="fa fa-play-circle fa-st"></i></button>
+
+                </div>
+                </div>
+                <div class="col-6">
+                  <h5 class="sm-pd">
+                    Count
+                  </h5>
+                  <div id="turn"></div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
 </body>
 
 </html>

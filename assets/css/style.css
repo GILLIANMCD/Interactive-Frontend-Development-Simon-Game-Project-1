@@ -1,61 +1,25 @@
 body {
-    background-color: #fff;
+    background-image:url(mosaic.png);
     margin: 0;
     padding: 0;
     text-align: center;
   }
-  #container {
-    
-  }
 
- @media screen and (max-width: 376px) {
-    .bg-circle {
-    position: absolute;
-    background: #222;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px; 
-    margin-top: 70px; 
-  }
-  .game-board {
-    position: relative;
-    min-height: 300px;
-    min-width: 300px;
-    font-size: 0; /*Align Quadrants*/
-  }
-  
-  .quadrant {
-    border-style: solid;
-    border-color: #eee;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-  }
-.inner-circle {
-    height: 150px;
-    width: 150px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    
-  }
- } 
+
+  /*Background Circle */
   .bg-circle {
-    position: absolute;
-    background: #222;
+    position: relative;
     border-radius: 50%;
     height: 600px;
     width: 600px; 
     margin-top: 70px; 
   }
+
   .game-board {
-    position: relative;
+    position: absolute;
     min-height: 600px;
     min-width: 600px;
-    font-size: 0; /*Align Quadrants*/
-  }
+    }
   
   .quadrant {
     border-style: solid;
@@ -63,6 +27,7 @@ body {
     display: inline-block;
     height: 300px;
     width: 300px;
+    float: left;
   }
   
   .green {
@@ -98,4 +63,114 @@ body {
     left: 25%;
     
   }
+  .title {
+   margin-top: 5px;
+  }
+  .top-inner {
+   padding: 20px 20px 0px 20px;
+  }
+  .bottom-inner {
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .level {
+    margin: 0;
+    display: inline-grid;
+  }
+  .fa-st {
+    color: #7fff00;
+    font-size: 2.5rem;
+  }
+ 
+   #turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    margin: 10px 10px 1px 34px;
+  }
+/*Responsive for Mobile*/
+@media screen and (max-width: 376px) {
+   
+    .bg-circle {
+    position: absolute;
+    background: #222;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px; 
+    margin-top: 70px; 
+  }
+  .game-board {
+    position: relative;
+    min-height: 300px;
+    min-width: 300px;
+    }
+  
+  .quadrant {
+    border-style: solid;
+    border-color: #eee;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+.inner-circle {
+    height: 150px;
+    width: 150px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+  }
+ .title{
+      font-size: 1.5rem;
+      margin: 0;
+     
+    }
+.top-inner {
+   padding: 0px 20px 0px 20px;
+  }
+
+   .bottom-inner {
+    padding: 0px 20px 20px 20px;
+  }
+  /*Padding Inner Circle Elements*/
+  .sm-pd {
+padding: 0;
+font-size: 1rem;
+margin-bottom: 1px; 
+  }
+
+   #turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    margin: 3px 10px 1px 1px;
+  }
+
+  .level {
+    margin: 0;
+    display: inline-grid;
+    font-size: 0.6rem;
+  }
+/*Font Awesome Icon Styling*/
+  .fa-st {
+    color: #7fff00;
+    font-size: 1.5rem;
+  }
+ }
   
