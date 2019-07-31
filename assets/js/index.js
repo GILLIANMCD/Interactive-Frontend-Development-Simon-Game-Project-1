@@ -1,10 +1,3 @@
-let sounds = [
-	new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3'),
-	new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3'),
-	new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3'),
-	new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3')
-];
-
 
 let strict = false;
 let noise = true;
@@ -41,12 +34,30 @@ level4.addEventListener('click', (event) => {
 
 
 strictButton.addEventListener('click', (event) => {
-	console.log("checked")
-})
+ if (strictButton.click == true){
+     strict = true;
+ } else {
+     strict = false;
+ }
+});
+
 
 startButton.addEventListener('click', (event) => {
-	console.log("checked")
+	if (startButton.click == true){
+        on = 
+    }
 })
+
+
+
+function one() {
+  if (noise) {
+    let audio = document.getElementById("green");
+    audio.play();
+  }
+  noise = true;
+  green.style.backgroundColor = "lightgreen";
+}
 
 
 
