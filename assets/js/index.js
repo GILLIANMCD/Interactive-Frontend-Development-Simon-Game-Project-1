@@ -43,9 +43,7 @@ strictButton.addEventListener('click', (event) => {
 
 
 startButton.addEventListener('click', (event) => {
-	if (startButton.click == true){
-        on = 
-    }
+	console.log("checked")
 })
 
 
@@ -58,6 +56,9 @@ function one() {
   noise = true;
   green.style.backgroundColor = "lightgreen";
 }
+$('strict').on('click', function() {
+    $('strict').removeClass('selected');
+});
 
 
 
