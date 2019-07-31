@@ -4,23 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/83ed412054.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <audio id="soundgreen">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
-  </audio>
-  <audio id="soundred">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
-  </audio>
-  <audio id="soundyellow">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
-  </audio>
-  <audio id="soundblue">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
-  </audio>
   <title>Simon Game</title>
 </head>
 
@@ -46,43 +36,43 @@
                   </h5>
 
                   <form>
-                    <label class="radio-inline level"><input type="radio" name="optradio" checked>1</label>
-                    <label class="radio-inline level"><input type="radio" name="optradio">2</label>
-                    <label class="radio-inline level"><input type="radio" name="optradio">3</label>
-                    <label class="radio-inline level"><input type="radio" name="optradio">4</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio" id="level1">1</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio" id="level2">2</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio" id="level3">3</label>
+                    <label class="radio-inline level"><input type="radio" name="optradio" id="level4">4</label>
                   </form>
                 </div>
-                
-                <div class="col-6">
+                <div class="col-6 strict">
                   <h5 class="sm-pd">
                     Strict
                   </h5>
-                  <button class="btn sm-pd"><i class="fa fa-toggle-off fa-st"></i></button>
+                  <button type="button" id="strict"></button>
                 </div>
               </div>
               <div class="row bottom-inner">
-                <div class="col-6 sm-pd">
+                <div class="col-6 sm-pd start ">
                   <h5 class="sm-pd">
                     Start
                   </h5>
 
-                  <button class="btn sm-pd"><i class="fa fa-play-circle fa-st"></i></button>
 
-                </div>
+                  <button type="button" id="start"></button>
+
                 </div>
                 <div class="col-6">
                   <h5 class="sm-pd">
                     Count
                   </h5>
-                  <div id="turn"></div>
+                  <div id="turn">--</div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
