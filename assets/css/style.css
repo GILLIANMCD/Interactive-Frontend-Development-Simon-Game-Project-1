@@ -4,7 +4,16 @@ body {
     padding: 0;
     text-align: center;
   }
+.inst-heading {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
 
+  }
+  .inst-content {
+    color: #fff; 
+    font-size: 2rem; 
+  }
   /*Background Circle */
   .bg-circle {
     position: relative;
@@ -86,7 +95,7 @@ body {
     background-color: #fff;
     
   }
-  .strict.selected {
+  #strict.selected {
     background-color: red;
   }
   #start {
@@ -96,12 +105,10 @@ body {
     background-color: #fff;
   }
 
-  #start:active {
+  #start.selected {
     background-color: limegreen;
   }
-  #start.active {
-    background-color: limegreen;
-  }
+  
    #turn {
     position: absolute;
     background: #330000;

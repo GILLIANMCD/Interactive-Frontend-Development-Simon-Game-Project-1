@@ -1,7 +1,6 @@
 
 let strict = false;
 let noise = true;
-let start;
 
 const level1 = document.getElementById("level1");
 const level2 = document.getElementById("level2");
@@ -33,32 +32,16 @@ level4.addEventListener('click', (event) => {
 })
 
 
-strictButton.addEventListener('click', (event) => {
- if (strictButton.click == true){
-     strict = true;
- } else {
-     strict = false;
- }
+
+$('#strict').on('click', function() {
+    $('#strict').removeClass('selected');
+    $(this).addClass('selected');
 });
 
-
-startButton.addEventListener('click', (event) => {
-	console.log("checked")
-})
-
-
-
-function one() {
-  if (noise) {
-    let audio = document.getElementById("green");
-    audio.play();
-  }
-  noise = true;
-  green.style.backgroundColor = "lightgreen";
-}
-$('strict').on('click', function() {
-    $('strict').removeClass('selected');
-});
+$('#start').on('click', function() {
+    $('#start').removeClass('selected');
+    $(this).addClass('selected');
+   });
 
 
 
